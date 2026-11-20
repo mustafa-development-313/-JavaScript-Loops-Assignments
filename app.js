@@ -253,3 +253,337 @@
 
 // 22. Use a loop to count how many numbers in an array [3, 8, 6, 1, 9, 2] are even.
 
+
+// const div = document.querySelector("#cities");
+
+// let numbers = [3, 8, 6, 1, 9, 2];
+// let count = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+
+//     if (numbers[i] % 2 === 0) {
+//         count++;
+//     }
+
+// }
+
+// div.innerHTML = "Total even numbers: " + count;
+
+
+// 23. Write a loop that calculates the average of numbers in an array [20, 30, 40, 50].
+
+// const div = document.querySelector("#cities");
+
+// let numbers = [20, 30, 40, 50];
+// let total = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     total += numbers[i];
+// }
+
+// let average = total / numbers.length;
+
+// div.innerHTML = "Average: " + average;
+
+
+// 24. Given an array [2, 4, 6, 8, 10], use a loop to create a new array where each value is
+// multiplied by 3.
+// const div = document.querySelector("#result");
+
+// let numbers = [2, 4, 6, 8, 10];
+// let newArray = [];
+
+// for (let i = 0; i < numbers.length; i++) {
+//     newArray.push(numbers[i] * 3);
+// }
+
+// div.innerHTML = newArray;
+
+// 25. Loop through an array [1, 3, 5, 7, 9] and count how many elements are greater than 4.
+
+//  const div = document.querySelector("#result");
+//  let numbers = [1, 3, 5, 7, 9];
+// let count = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] > 4) {
+//         count++;
+//     }
+// }
+
+// div.innerHTML = count;
+
+// 26. Given an array [10, 15, 20, 25, 30], use a loop to add only the numbers divisible by 5.
+
+// const div = document.querySelector("#result");
+
+// let numbers = [10, 15, 20, 25, 30];
+// let total = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 5 === 0) {
+//         total += numbers[i];
+//     }
+// }
+
+// div.innerHTML = total;
+
+
+// 27. Write a loop that checks if a number 25 exists in the array [10, 20, 30, 40, 25].
+
+// const div = document.querySelector("#result");
+
+// let numbers = [10, 20, 30, 40, 25];
+// let found = false;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] === 25) {
+//         found = true;
+//         break;
+//     }
+// }
+
+// if (found) {
+//     div.innerHTML = "25 exists in the array";
+// } else {
+//     div.innerHTML = "25 does not exist in the array";
+// }
+
+
+// 28. Given two arrays [1, 2, 3] and [4, 5, 6], use a loop to create a third array containing the
+// sum of corresponding elements.
+
+// const div = document.querySelector("#result");
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+// let arr3 = [];
+
+// for (let i = 0; i < arr1.length; i++) {
+//     arr3.push(arr1[i] + arr2[i]);
+// }
+
+
+// div.innerHTML = arr3;
+
+
+// 29. Use a loop to find the second-largest number in an array [10, 99, 23, 87, 56].
+
+// const div = document.querySelector("#result");
+
+// let numbers = [10, 99, 23, 87, 56];
+
+// let largest = -Infinity;
+// let secondLargest = -Infinity;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] > largest) {
+//         secondLargest = largest;
+//         largest = numbers[i];
+//     } else if (numbers[i] > secondLargest && numbers[i] < largest) {
+//         secondLargest = numbers[i];
+//     }
+// }
+
+// div.innerHTML = secondLargest;
+
+
+// 30. Given an array [1, 2, 3, 4, 5], reverse the array manually using a loop (don’t use
+// .reverse()).
+
+// const div = document.querySelector("#result");
+
+// let numbers = [1, 2, 3, 4, 5];
+// let reversed = [];
+
+// for (let i = numbers.length - 1; i >= 0; i--) {
+//     reversed.push(numbers[i]);
+// }
+
+// div.innerHTML = reversed;
+
+
+// 31. Write a loop that finds and prints all the prime numbers between 1 and 50.
+
+// const div = document.querySelector("#result");
+
+// let primes = [];
+
+// for (let i = 2; i <= 50; i++) {
+//     let isPrime = true;
+
+//     for (let j = 2; j < i; j++) {
+//         if (i % j === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+
+//     if (isPrime) {
+//         primes.push(i);
+//     }
+// }
+
+// div.innerHTML = primes;
+
+// 32. Create a loop that finds the difference between the largest and smallest numbers in an
+// array [11, 4, 99, 2, 47].
+
+// const div = document.querySelector("#result");
+
+// let numbers = [11, 4, 99, 2, 47];
+
+// let largest = numbers[0];
+// let smallest = numbers[0];
+
+// for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] > largest) {
+//         largest = numbers[i];
+//     }
+
+//     if (numbers[i] < smallest) {
+//         smallest = numbers[i];
+//     }
+// }
+
+// let difference = largest - smallest;
+
+// div.innerHTML = difference;
+
+
+// 33. Given an array [0, -1, -5, 6, 8, -3], count how many negative numbers are in the array.
+
+// const div = document.querySelector("#result");
+
+// let numbers = [0, -1, -5, 6, 8, -3];
+// let count = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] < 0) {
+//         count++;
+//     }
+// }
+
+// div.innerHTML = count;
+
+
+// 34. Loop through an array of numbers and create a new array that only contains odd
+// numbers.
+// const div = document.querySelector("#result");
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// let oddNumbers = [];
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 !== 0) {
+//         oddNumbers.push(numbers[i]);
+//     }
+// }
+
+// div.innerHTML = oddNumbers;
+
+
+// 35. Use a loop to remove all zeroes from an array [0, 1, 0, 3, 0, 5] and store the non-zero
+// elements in a new array.
+
+// const div = document.querySelector("#result");
+
+// let numbers = [0, 1, 0, 3, 0, 5];
+// let newArray = [];
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] !== 0) {
+//         newArray.push(numbers[i]);
+//     }
+// }
+
+// div.innerHTML = newArray;
+
+
+// 36. Given an array [1, 2, 3, 4, 5, 6], use a loop to swap the first and last elements.
+
+// const div = document.querySelector("#result");
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// let temp = numbers[0];
+
+// numbers[0] = numbers[numbers.length - 1];
+
+// numbers[numbers.length - 1] = temp;
+
+// div.innerHTML = numbers;
+
+
+// 37. Write a loop that checks whether all numbers in an array [2, 4, 6, 8] are even.
+
+// const div = document.querySelector("#result");
+
+// let numbers = [2, 4, 6, 8];
+// let allEven = true;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 !== 0) {
+//         allEven = false;
+//         break;
+//     }
+// }
+
+// if (allEven) {
+//     div.innerHTML = "All numbers are even";
+// } else {
+//     div.innerHTML = "Not all numbers are even";
+// }
+
+
+// 38. Create a loop that counts how many numbers in [5, 10, 15, 20, 25] are greater than or
+// equal to the average of the array.
+
+// const div = document.querySelector("#result");
+
+// let numbers = [5, 10, 15, 20, 25];
+
+// let total = 0;
+// let count = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     total += numbers[i];
+// }
+
+// let average = total / numbers.length;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] >= average) {
+//         count++;
+//     }
+// }
+
+// div.innerHTML = "Average: " + average + " | Count: " + count;
+
+
+// 39. Given an array [2, 2, 2, 2, 2], use a loop to check whether all elements are equal.
+
+// const div = document.querySelector("#result");
+
+// let numbers = [2, 2, 2, 2, 2];
+// let equal = true;
+
+// for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] !== numbers[0]) {
+//         equal = false;
+//         break;
+//     }
+// }
+
+// if (equal) {
+//     div.innerHTML = "All elements are equal";
+// } else {
+//     div.innerHTML = "Elements are not equal";
+// }
+
+
+
+
+// =========================📝 JavaScript Loops Assignments finished=========================
+ 
