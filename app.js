@@ -156,3 +156,100 @@
 // 14. Use a loop to print all values of the array ["dog", "cat", "bird"] into a single paragraph with
 // ID animals.
 
+// const div = document.querySelector("#cities")
+
+// let animals = ["dog", "cat", "bird"];
+
+// for(i = 0;i <= 2;i++){
+//     div.innerHTML += animals[i] + "<br>"
+// }
+
+
+// 15. Use document.querySelector to select a heading with ID title and change its text to
+// "Welcome to JavaScript!"./
+
+// const div = document.querySelector("#cities")
+
+// div.innerHTML = "Welcome to JavaScript!"
+
+
+// 16. Create a loop that prints all numbers between 1 and 50 that are divisible by 5, and log
+// them to the console.
+
+// for(i = 1;i <= 50;i++){
+//     if (i % 5 === 0) {
+//         console.log(i);
+        
+//     }
+// }
+
+
+// 17. Given an array of scores [80, 60, 90, 70], calculate how many scores are above 75 and
+// display the count in a div with ID highScores.
+
+// const div = document.querySelector("#cities")
+
+// let scores = [80, 60, 90, 70];
+// let count = 0;
+
+// for(i = 0;i < scores.length;i++){
+//     if (scores[i] > 75) {
+//         count++
+//     }
+// }
+// div.innerHTML = count
+
+
+// 18. Select an element with ID message and change its text to "Updated successfully" using
+// document.querySelector./
+
+// const div = document.querySelector("#cities")
+
+// div.innerHTML = "Updated successfully"
+
+
+// 19. Create an array of subjects like ["Math", "Science", "English"], and use a loop to show
+// them in a paragraph with ID subjectsList.
+// const div = document.querySelector("#cities")
+
+// let subjects = ["Math", "Science", "English"];
+// for(i = 0; i < subjects.length;i++){
+//     div.innerHTML += subjects[i] + "<br>"
+// }
+
+
+// 20. Write a loop that prints numbers from 10 down to 1 and shows the result inside a Given
+// an array of numbers [5, 10, 15, 20], use a loop to calculate and print the sum of all
+// elements.
+
+// const div = document.querySelector("#cities");
+
+// // Part 1
+// for(let i = 10; i >= 1; i--){
+//     div.innerHTML += i + "<br>";
+// }
+
+// // Part 2
+// let numbers = [5, 10, 15, 20];
+// let sum = 0;
+
+// for(let i = 0; i < numbers.length; i++){
+//     sum += numbers[i];
+// }
+
+// div.innerHTML += "<br>Sum: " + sum;
+
+// 21. Create a loop that finds the largest number in an array [45, 67, 12, 89, 34].
+
+// let number = [45, 67, 12, 89, 34];
+// let largest = number[0]
+// for(i = 0; i < number.length;i++){
+//     if (number[i] > largest) {
+//         largest = number[i]
+//     }
+// }
+// console.log(largest);
+
+
+// 22. Use a loop to count how many numbers in an array [3, 8, 6, 1, 9, 2] are even.
+
